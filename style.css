@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+}
+
+.nav{
+    text-decoration: none;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    color: white;
+    margin-top: 9px;
+}
+
+ul,li{
+    list-style: none;
+
+}
+.nav ul li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: greenyellow;
+    position: absolute;
+    /* bottom: 0; */
+    /* left: 0; */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav ul li a:hover::after {
+    width: 5%;
+  }
+  
+  .nav ul li a.active::after {
+    width: 5%;
+  }
+  
+
+ul{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.7s;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.main{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px;
+}
+span{
+    color: yellow;
+}
+.btn{
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: yellow;
+    border: 0px;
+}
+.btn2{
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+}
+
+.btn:hover{
+    background-color: black;
+    color: yellow;
+}
+.btn2:hover{
+    background-color: greenyellow;
+    color: blue;
+}
+.head{
+    font-size: xx-large;
+}
